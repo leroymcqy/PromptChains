@@ -24,6 +24,77 @@ This prompt chain helps research publicly traded companies benefiting from the r
 ```
 Using your web search capabilities, I want you to search the web for the latest information on publicly traded companies that are currently benefiting from the rise of AI. Include URL columns where I can learn more about each company, their competitive advantages, and any analyst ratings. Return this back in a table inline. We will research in batches of 10, when I say "More" you find 10 more. Keep the information brief and all within the inline table. Example: | Company Name | Stock Symbol | Competitive Advantages | Analyst Ratings | URL | |--------------|--------------|------------------------------------------|------------------|----------------------------------------| | Company A | ABC | Leading AI technology, strong R&D | Strong Buy | Link | | Company B | XYZ | Dominant in AI software, extensive patents| Moderate Buy | Link | Please provide the latest information available. ~More ~ More ~ More
 ```
+### Generate a blog Post
+
+```
+TOPIC=[topic], KEYWORD=[keywords], WORDCOUNT=[length], AUDIENCE=[target]~
+
+
+
+Use web search to identify the top 10 ranking pages for KEYWORD. Analyze their content structure, headings, and key points covered.~
+Based on the analysis, create a detailed outline with at least 15 headings and subheadings (H1, H2, H3, H4) that comprehensively cover TOPIC. Ensure the outline has a logical flow and addresses key user intents.~
+Research and list 10-15 related long-tail keywords and LSI (Latent Semantic Indexing) terms relevant to TOPIC. Plan to naturally incorporate these throughout the article.~
+Craft an engaging, SEO-optimized title (H1) that includes KEYWORD and appeals to AUDIENCE. Ensure it's under 60 characters for optimal display in search results.~
+Craft an engaging, SEO-optimized meta description that includes KEYWORD and appeals to AUDIENCE. Ensure it's under 160 characters for optimal display in search results.~
+Write a compelling introduction (150-200 words) that hooks the reader, introduces TOPIC, and outlines what the article will cover. Naturally include KEYWORD.~
+For each main section (H2) in the outline:
+1. Write 300-500 words of in-depth, informative content.
+2. Include relevant examples, data, or case studies found through web search.
+3. Naturally incorporate 1-2 related long-tail keywords or LSI terms.
+4. Ensure a conversational tone that speaks directly to AUDIENCE.
+5. Add a unique insight or perspective not commonly found in competing articles.
+6. Keep the keyword usage to a 1.5% density level. ~
+Create 2-3 custom images, diagrams, or infographic concepts that visually explain key points in the article. Describe each in detail, including alt text optimized for KEYWORD.~
+Write a "Quick Takeaways" or "Key Points" section that summarizes the main insights of the article in 5-7 bullet points.~
+Develop a conclusion (200-250 words) that summarizes the key points, reinforces the main message, and includes a call-to-action relevant to AUDIENCE.~
+Create 5 unique, relevant FAQs related to TOPIC. Ensure answers are concise yet informative, and naturally include long-tail keywords.~
+Write a custom message asking for reader feedback and encouraging social shares. Include a question to boost engagement.~
+Use web search to identify 3-5 authoritative external sources relevant to TOPIC. Create in-text citations and a "References" section at the end of the article.~
+Review the entire article to ensure optimal keyword density (aim for 1-2% for KEYWORD), proper use of headings, and inclusion of long-tail keywords. Check that the content maintains high perplexity and burstiness while staying on topic.~
+Write a blog post on TOPIC, using the previously generated outline as a foundation. Aim for a friendly, casual, informative, positive, and trustworthy tone, tailored to AUDIENCE. The post should be approximately WORDCOUNT words.
+
+In your blog post:
+
+Begin with a compelling hook to draw readers in, and use storytelling to create a connection throughout.
+Present key information using the inverted pyramid approach, combining anecdotal examples with relevant data.
+Divide the content into sections with descriptive subheadings (use H2 for main sections, and H3 for subsections) for easy navigation.
+Use recent, credible sources (published within the last five years) to support your points with statistics and factual data.
+Thoughtfully address counterarguments and provide well-reasoned rebuttals.
+Employ active voice and descriptive language for clarity and conciseness, using persuasive techniques to emphasize the benefits.
+Conclude with a call-to-action (CTA) that invites reader interaction, such as sharing thoughts or exploring further reading.
+Craft a balanced, engaging, and data-supported blog post that resonates with your audience and builds trust through accurate, quantitative evidence.
+Do not include citations in the article.~
+
+
+
+Provide top 5 short focus keywords for the article separated by commas~
+
+Provide tags separated by commas~
+
+Generate a wide aspect ratio thumbnail. Make it fit the policy~
+
+Write user-friendly URLs for this keyword on the domain lgaming.xyz for the KEYWORD.~
+
+Suggest the best call to action for TOPIC for AUDIENCE.~
+
+Rewrite the content with the following adjustments:
+
+
+
+Burstiness refers to the variation in sentence lengths and structures, creating a dynamic and engaging rhythm. High perplexity involves diverse vocabulary and intricate sentence patterns, while high burstiness blends short, impactful sentences with longer, detailed ones. Both elements enhance the readability and interest of the text, making it more captivating for the reader. That said, your response must be written with a very high degree of perplexity and burstiness. So high to the point where some sentences may even be difficult to understand.
+
+
+
+Here is a good example of sentences with a high degree of perplexity and burstiness. Maintain a similar tone and writing style to this: 
+
+
+
+“Premiere Pro has an attractive, flexible interface, and I'm a fan of the simplifying changes Adobe brought to it in the April 2022 update. The startup view helps you quickly get to projects you've been working on, start new projects, or search for Adobe Stock footage. The dark program window makes your clips the center of attention. It now just has three main modes (in addition to the Home screen), for Import, Edit, and Export. A button or menu choice in Edit mode has a good selection of workspace layouts for Assembly, Editing, Color, Export, and more. You can pull off any of the panels and float them wherever you want on your display(s). Get started with templates for You can create content bins based on search terms, too. ” 
+
+Maintain the subheadings and formatting. 
+
+Avoid using the following words in your output: "meticulous, meticulously, navigating, complexities, realm, understanding, dive, shall, tailored, towards, underpins, everchanging, ever-evolving, the world of, not only, alright, embark, Journey, In today's digital age, hey, game changer, designed to enhance, it is advisable, daunting, when it comes to, in the realm of, amongst, unlock the secrets, unveil the secrets, and robust, diving, elevate, unleash, power, cutting-edge, rapidly, expanding, mastering, excels, harness, imagine, It's important to note, Delve into, Tapestry, Bustling, In summary, Remember that…, Take a dive into, Navigating, Landscape, Testament, In the world of, Realm, Embark, Analogies to being a conductor or to music, Vibrant, Metropolis, Firstly, Moreover, Crucial, To consider, Essential, There are a few considerations, Ensure, It's essential to, Furthermore, Vital, Keen, Fancy, As a professional, However, Therefore, Additionally, Specifically, Generally, Consequently, Importantly, Indeed, Thus, Alternatively, Notably, As well as, Despite, Essentially, While, Unless, Also, Even though, Because, In contrast, Although, In order to, Due to, Even if, Given that, Arguably, You may want to, On the other hand, As previously mentioned, It's worth noting that, To summarize, Ultimately, To put it simply, Promptly, Dive into, In today's digital era, Reverberate, Enhance, Emphasize / Emphasize, Revolutionize, Foster, Remnant, Subsequently, Nestled, Game changer, Labyrinth, Gossamer, Enigma, Whispering, Sights unseen, Sounds unheard, Indelible, My friend, In conclusion, except”
+```
 
 ### Generate a welcome email
 
