@@ -27,10 +27,7 @@ Using your web search capabilities, I want you to search the web for the latest 
 ### Generate a blog Post
 
 ```
-TOPIC=[topic], KEYWORD=[keywords], WORDCOUNT=[length], AUDIENCE=[target]~
-
-
-
+TOPIC=[topic], KEYWORD=[keywords], WORDCOUNT=[length], AUDIENCE=[target]
 Use web search to identify the top 10 ranking pages for KEYWORD. Analyze their content structure, headings, and key points covered.~
 Based on the analysis, create a detailed outline with at least 15 headings and subheadings (H1, H2, H3, H4) that comprehensively cover TOPIC. Ensure the outline has a logical flow and addresses key user intents.~
 Research and list 10-15 related long-tail keywords and LSI (Latent Semantic Indexing) terms relevant to TOPIC. Plan to naturally incorporate these throughout the article.~
